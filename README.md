@@ -1,4 +1,5 @@
 # Projeto-Redes
 
-Para utilização da aplicação primeiramente execute o script do servidor em um terminal.
-Abra outros terminais e execute o script de quantos clientes quiser.
+Sala de chat criada utilizando o protocolo TCP e conceitos de socket como projeto final da disciplina Redes de Computadores.
+
+Para executar, execute o script server.py e em seguida execute o script client.py para poder trocar mensagens no chat.
