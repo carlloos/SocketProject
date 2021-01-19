@@ -51,7 +51,8 @@ def main():
         nickname = client.recv(1024).decode('UTF-8')
         clients.append(client)
         nicknames.append(nickname)
-        postar("{} entrou no chat!".format(nickname).encode('UTF-8'))
+        msg = nickname + " entrou no chat!"
+        postar(msg.encode('UTF-8'))
 
         # Começa a thread para o clinte
         thread = threading.Thread(target=mensagens, args=(client,))
