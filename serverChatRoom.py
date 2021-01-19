@@ -29,12 +29,13 @@ def mensagens(client):
             postar(message)
 
         except:
-            # Caso o cliente feche o terminal, remover ele das listas
+            # Caso o cliente feche o terminal, remover ele e seu nickname das listas
             index = clients.index(client)
             clients.remove(client)
             client.close()
             nickname = nicknames[index]
-            postar('{} saiu!'.format(nickname).encode('UTF-8'))
+            msg = nickname + ' saiu do chat!'
+            postar(msg.encode('UTF-8'))
             nicknames.remove(nickname)
             break
 
