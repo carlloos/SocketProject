@@ -28,7 +28,9 @@ def recebendo():
 # Enviando mensagens
 def enviando():
     while True:
-        message = '{}: {}'.format(nickname, input(''))
+        msg = input('')
+        
+        message = nickname + ': '+ msg
         client.send(message.encode('UTF-8'))
 
 #O cliente precisa ter duas threads ocorrendo ao mesmo tempo. Uma está recebendo mensagens do servidor
