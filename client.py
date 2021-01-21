@@ -1,5 +1,6 @@
 import socket
 import threading
+from datetime import datetime
 
 # Escolhendo o nickname
 nickname = input("Escolha seu nickname: ")
@@ -22,8 +23,10 @@ def recebendo():
 # Enviando mensagens
 def enviando():
     while True:
-        msg = input('')       
-        message = nickname + ': '+ msg
+        msg = input('')
+        now = datetime.now()
+        horas = now.strftime("[%H:%M:%S] ") #hora de envio da mensagem       
+        message = horas + nickname + ': '+ msg
         client.send(message.encode('UTF-8'))
 
 def main():
