@@ -1,5 +1,5 @@
 # Projeto-Redes
-
+##Alunos: Carllos Eduardo Ferreira Lopes e Jorge Firmo
 Sala de chat criada utilizando o protocolo TCP e conceitos de socket e thread como projeto final da disciplina Redes de Computadores.
 
 ## Instruções para execução:
