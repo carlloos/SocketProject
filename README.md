@@ -1,6 +1,6 @@
 # Projeto-Redes
 
-Sala de chat criada utilizando o protocolo TCP e conceitos de socket como projeto final da disciplina Redes de Computadores.
+Sala de chat criada utilizando o protocolo TCP e conceitos de socket e thread como projeto final da disciplina Redes de Computadores.
 
 ## Instruções para execução:
 1. Executar o script _server.py_
